@@ -57,7 +57,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'Kit Digital USS',
+        title: '',
         logo: {
           alt: 'Kit Digital USS',
           src: 'img/logo.svg',
@@ -67,7 +67,7 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Documentación',
+            label: 'Documentación Kit Digital',
           },
           {to: '/blog', label: 'Changelog', position: 'left'},
           {

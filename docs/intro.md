@@ -2,46 +2,33 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+# Primeros pasos
 
-## Getting Started
+Te invitamos a concer nuestro kit digital **en menos de 5 minutos**.
 
-Get started by **creating a new site**.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Nuestro sistema de diseño USS tiene por objetivo ser una herramienta interna para la USS y ser la guía oficial por desarrolladores y diseñadores externos. 
 
-### What you'll need
+Este sistema cubre elementos desde diseño de interfaes, implementación de código, accesibilidad y experiencia en usuario.
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
 
-## Generate a new site
+## ¿Cómo usar el sitio del Kit Digital USS?
 
-Generate a new Docusaurus site using the **classic template**.
 
-The classic template will automatically be added to your project after you run the command:
+El sitio del Kit Digital USS se divide en 3 secciones.
 
-```bash
-npm init docusaurus@latest my-website classic edito
-```
+### Valores de Marca USS
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+[En esta sección](/docs/category/valores-de-marca) podrás conocer los elementos fundacionales sobre los que esta construido nuestro sistema de diseño digital.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
 
-## Start your site
+### Información para diseñadores
 
-Run the development server:
 
-```bash
-cd my-website
-npm run start
-```
+[En esta sección](/docs/category/diseño) podrás encontrar los fundamentos de diseño del KIT disponibles en Figma.
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+### Información para desarrolladores
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+[En esta sección](/docs/category/desarrolladores) te dara los pasos a seguir para integrar nuestro kit en tu proyecto y desarrollar interfaces con sus componentes.
