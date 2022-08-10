@@ -1,46 +1,43 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
+import React from "react";
 
 const FeatureList = [
   {
-    title: 'Valores de Marca',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae mollis dolor. Ut varius arcu vitae eleifend tristique. Vestibulum et nisl vel enim viverra tempus id sed odio. Morbi elit enim, egestas eget dictum sed, consequat vel nibh.
-      </>
-    ),
+    title: "Marca",
+    description: "Lorem ipsum dolor sit amet",
+    CTAlink: "/docs/category/valores-de-marca",
+    CTAlabel: "Guía de marca",
   },
   {
-    title: 'Diseño',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-    description: (
-      <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae mollis dolor. Ut varius arcu vitae eleifend tristique. Vestibulum et nisl vel enim viverra tempus id sed odio. Morbi elit enim, egestas eget dictum sed, consequat vel nibh.
-      </>
-    ),
+    title: "Diseño",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat scelerisque donec imperdiet donec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ipsum dolor sit amet, consectetur adipiscing elit. ",
+    CTAlink: "/docs/category/diseño",
+    CTAlabel: "Diseño con el kit",
   },
   {
-    title: 'Desarrolladores',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae mollis dolor. Ut varius arcu vitae eleifend tristique. Vestibulum et nisl vel enim viverra tempus id sed odio. Morbi elit enim, egestas eget dictum sed, consequat vel nibh.
-      </>
-    ),
+    title: "Desarrollo",
+    description: "Lorem ipsum dolor sit amet",
+    CTAlink: "/docs/category/desarrolladores",
+    CTAlabel: "Desarrollo con el kit",
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ CTAlink, CTAlabel, title, description }) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
+    <div className="uss-card uss-card--background-alt" style={{ width: "30%" }}>
+      <img
+        lazy
+        className={"card-img"}
+        src={"/img/placeholder-img.png"}
+        alt={"dummyimage"}
+      />
+      <div className={"uss-card__body"}>
+        <div className={"h5 mb-16"}>{title}</div>
+        <p className={"p-size--s  mb-32"}>{description}</p>
+        <a href={CTAlink} className={"uss-btn btn-ternary mt-auto"}>
+          {CTAlabel}
+          <i className={"uss-icon ri-arrow-right-circle-line"}></i>
+        </a>
       </div>
     </div>
   );
@@ -48,14 +45,14 @@ function Feature({Svg, title, description}) {
 
 export default function HomepageFeatures() {
   return (
-    <section className={styles.features}>
+    <div style={{ padding: "96px 0px" }}>
       <div className="container">
-        <div className="row">
+        <div style={{ display: "flex", gap: "28px", justifyContent: "center" }}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

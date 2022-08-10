@@ -1,53 +1,52 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+// const UssTheme = require("@elias-cl/uss-kitdigital/dist/css/main.css");
+// require("@elias-cl/uss-kitdigital/dist/css/main.css");
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Kit Digital USS',
-  tagline: 'Construye experiencias digitales para la USS',
-  url: 'https://uss-kitdigital-docs.netlify.app/',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  title: "kitdigital",
+
+  url: "https://uss-kitdigital-docs.netlify.app/",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'USS', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: "USS", // Usually your GitHub org/user name.
+  projectName: "docusaurus", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'es',
-    locales: ['es'],
+    defaultLocale: "es",
+    locales: ["es"],
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Asimovers/kitdigital-uss-docs/blob/dev/',
+          editUrl: "https://github.com/Asimovers/kitdigital-uss-docs/blob/dev/",
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Asimovers/kitdigital-uss-docs/blob/dev/',
+          editUrl: "https://github.com/Asimovers/kitdigital-uss-docs/blob/dev/",
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.scss"),
         },
       }),
     ],
@@ -56,62 +55,74 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      colorMode: {
+        defaultMode: "dark",
+        disableSwitch: true,
+        respectPrefersColorScheme: false,
+      },
       navbar: {
-        title: '',
+        style: 'dark',
+        title: "",
         logo: {
-          alt: 'Kit Digital USS',
-          src: 'img/logo.svg',
+          alt: "Kit Digital USS",
+          src: "img/logo.svg",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Documentación Kit Digital',
+            type: "doc",
+            docId: "intro",
+            position: "right",
+            label: "Documentación Kit Digital",
+            class: "uss-btn btn-ternary",
           },
-          {to: '/blog', label: 'Changelog', position: 'left'},
           {
-            href: 'https://github.com/Asimovers/kitdigital-uss-docs',
-            label: 'GitHub',
-            position: 'right',
+            to: "/blog",
+            label: "Changelog",
+            position: "right",
+            class: "uss-btn btn-ternary",
           },
+          // {
+          //   href: 'https://github.com/Asimovers/kitdigital-uss-docs',
+          //   label: 'GitHub',
+          //   position: 'right',
+          // },
         ],
       },
       footer: {
-        style: 'dark',
+        style: "dark",
         links: [
           {
-            title: 'Docs',
+            title: "Docs",
             items: [
               {
-                label: 'Documentación',
-                to: '/docs/intro',
+                label: "Documentación",
+                to: "/docs/intro",
               },
             ],
           },
           {
-            title: 'Comunidad',
+            title: "Comunidad",
             items: [
               {
-                label: 'Discord',
-                href: '#',
+                label: "Discord",
+                href: "#",
               },
               {
-                label: 'Twitter',
-                href: '#',
+                label: "Twitter",
+                href: "#",
               },
             ],
           },
           {
-            title: 'More',
+            title: "More",
             items: [
               {
-                label: 'Changelog',
-                to: '/blog',
+                label: "Changelog",
+                to: "/blog",
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/Asimovers/kitdigital-uss-docs',
+                label: "GitHub",
+                href: "https://github.com/Asimovers/kitdigital-uss-docs",
               },
             ],
           },
@@ -123,6 +134,7 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+  plugins: ["docusaurus-plugin-sass"],
 };
 
 module.exports = config;
