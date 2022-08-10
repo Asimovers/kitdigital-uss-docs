@@ -1,7 +1,7 @@
 ---
 sidebar_position: 1
 ---
-# Valores USS
+# Misión, Visión y Valores Institucionales
 
 ## Nuestra misión
 
@@ -24,11 +24,11 @@ La Universidad promueve la búsqueda de la verdad, entendida como el esfuerzo po
 
 Porque son sin duda las virtudes por excelencia. La primera porque enseña que es el amor la fuerza que debe regir el mundo para derrotar el odio y la violencia; y la justicia, porque permite ordenar el desarrollo de la sociedad en función del Bien Común, y la conducta individual de cada uno, en función de esa máxima ética que dice, haz a tu prójimo lo que desearías que hicieran contigo.
 
-###  La Honestidad
+###  La honestidad
 
 Entendida como la virtud de actuar con rectitud, humildad y coraje, para reconocer un error, reparar un daño, y buscar siempre la verdad y la justicia, aún en las circunstancias más adversas o difíciles.
 
-###  La Responsabilidad
+###  La responsabilidad
 
 Entendida como la virtud de descubrir el sentido más profundo de la libertad y de reconocer sus límites, a partir del sentido que tiene la vida en comunidad, y del principio jurídico que establece que todo derecho tiene una obligación o un deber correlativo.
 
@@ -37,15 +37,15 @@ Entendida como la virtud de descubrir el sentido más profundo de la libertad y 
 
 Son características inherentes a los atributos de la persona humana, y a la esencia de la actividad académica, en oposición a las conductas irracionales, a los dogmatismos ideológicos que se apoyan en consignas sin contenido o en cualquier forma de violencia física o verbal, recursos que hacen imposible el diálogo y la confrontación de argumentos e ideas.
 
-### LA SOLIDARIDAD, LA ALEGRÍA DE SERVIR Y EL SENTIDO DEL DEBER
+### La solidaridad, la alegría de servir y el sentido del deber
 
 Porque es el cultivo de esta trilogía de valores que enseñaba el padre Hurtado, lo que permite desarrollar en cada uno, la cultura de respeto a toda persona humana, y tener un sentido de la existencia propia, opuesta al egoísmo, al individualismo extremo y a una competitividad sin límites.
 
-### ESPÍRITU DE SUPERACIÓN Y PROGRESO PERSONAL
+### Espíritu de superación y progreso personal
 
 Toda persona humana tiene en potencia capacidades y atributos que le permiten estar siempre avanzando hacia una mayor perfección, aspirando a ser mejor. El mérito de cada uno es hacer realidad esas potencialidades, buscando el bien propio y el de los demás.
 
-###  LABORIOSIDAD Y VOCACIÓN POR EL TRABAJO BIEN HECHO
+###  Laboriosidad y vocación por el trabajo bien hecho
 
 Porque todo siempre se puede hacer mejor. Es una virtud cumplir siempre con los deberes y compromisos, buscando ir más allá de lo estrictamente necesario u obligatorio. Nunca conformarse con lo mínimo, sino aspirar siempre a lo máximo; nunca conformarse con lo regular, sino aspirar siempre a lo mejor.
 
