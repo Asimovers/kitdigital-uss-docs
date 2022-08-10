@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Kit Digital USS',
-  tagline: 'Sistema de diseño digital USS',
+  tagline: 'Construye experiencias digitales para la USS',
   url: 'https://uss-kitdigital-docs.netlify.app/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -86,6 +86,33 @@ const config = {
               {
                 label: 'Documentación',
                 to: '/docs/intro',
+              },
+            ],
+          },
+          {
+            title: 'Valores de Marca',
+            items: [
+              {
+                label: 'Marca',
+                to: '/docs/brand',
+              },
+            ],
+          },
+          {
+            title: 'Diseño',
+            items: [
+              {
+                label: 'Diseño',
+                to: '/docs/design',
+              },
+            ],
+          },
+          {
+            title: 'Desarrollo',
+            items: [
+              {
+                label: 'Desarrollo',
+                to: '/docs/developers',
               },
             ],
           },
