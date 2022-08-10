@@ -90,33 +90,6 @@ const config = {
             ],
           },
           {
-            title: 'Valores de Marca',
-            items: [
-              {
-                label: 'Marca',
-                to: '/docs/brand',
-              },
-            ],
-          },
-          {
-            title: 'Diseño',
-            items: [
-              {
-                label: 'Diseño',
-                to: '/docs/design',
-              },
-            ],
-          },
-          {
-            title: 'Desarrollo',
-            items: [
-              {
-                label: 'Desarrollo',
-                to: '/docs/developers',
-              },
-            ],
-          },
-          {
             title: 'Comunidad',
             items: [
               {
