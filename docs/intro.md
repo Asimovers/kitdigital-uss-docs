@@ -10,7 +10,7 @@ Te invitamos a concer nuestro kit digital **en menos de 5 minutos**.
 
 Nuestro sistema de diseño USS tiene por objetivo ser una herramienta interna para la USS y ser la guía oficial por desarrolladores y diseñadores externos. 
 
-Este sistema cubre elementos desde diseño de interfaes, implementación de código, accesibilidad y experiencia en usuario.
+Este sistema cubre elementos desde diseño de interfaces, implementación de código, accesibilidad y experiencia en usuario.
 
 
 ## ¿Cómo usar el sitio del Kit Digital USS?
