@@ -8,7 +8,7 @@ sidebar_position: 1
 Te invitamos a concer nuestro kit digital **en menos de 5 minutos**.
 
 
-Nuestro sistema de diseño USS tiene por objetivo ser una herramienta interna para la USS y ser la guía oficial por desarrolladores y diseñadores externos. 
+Aprovecha estos recursos de diseño, desarrollo y comunicación para construir productos digitales consistentes de forma simple y rápida para la Universidad San Sebastián
 
 Este sistema cubre elementos desde diseño de interfaces, implementación de código, accesibilidad y experiencia en usuario.
 

@@ -1,7 +1,7 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
-# Principios del Diseño
+# Fundamentos de Diseño
 
 Principios del Diseño

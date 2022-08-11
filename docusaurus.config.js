@@ -92,11 +92,19 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "Docs",
+            title: "Documentación",
             items: [
               {
-                label: "Documentación",
-                to: "/docs/intro",
+                label: "Valores de marca",
+                to: "/docs/category/valores-de-marca",
+              },
+              {
+                label: "Elementos de diseño",
+                to: "/docs/category/diseño",
+              },
+              {
+                label: "Información para desarrolladores",
+                to: "/docs/category/desarrolladores",
               },
             ],
           },
@@ -107,14 +115,10 @@ const config = {
                 label: "Discord",
                 href: "#",
               },
-              {
-                label: "Twitter",
-                href: "#",
-              },
             ],
           },
           {
-            title: "More",
+            title: "Información adicional",
             items: [
               {
                 label: "Changelog",
@@ -127,7 +131,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Kit Digital - Universidad San Sebastián ${new Date().getFullYear()}. Built with Docusaurus.`,
+        copyright: `Kit Digital - Universidad San Sebastián ${new Date().getFullYear()}. <br> Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

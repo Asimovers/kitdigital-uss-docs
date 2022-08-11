@@ -26,7 +26,7 @@ function HomepageHeader() {
         </p>
         <div>
           <Link to="/docs/intro" className={"uss-btn btn-primary"}>
-            Documentación<i class="uss-icon ri-arrow-right-circle-line"></i>
+          Descubre nuestro kit digital<i class="uss-icon ri-arrow-right-circle-line"></i>
           </Link>
           {/* <Link to="/docs/intro" className={"uss-btn btn-primary"}>
             Documentación<i class="uss-icon ri-arrow-right-circle-line"></i>
