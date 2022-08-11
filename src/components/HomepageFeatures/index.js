@@ -3,20 +3,20 @@ import React from "react";
 const FeatureList = [
   {
     title: "Marca",
-    description: "Lorem ipsum dolor sit amet",
+    description: "Valores de marca USS sobre los que hemos construido nuestro sistema de diseño digital.",
     CTAlink: "/docs/category/valores-de-marca",
     CTAlabel: "Guía de marca",
   },
   {
     title: "Diseño",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh consectetur consequat scelerisque donec imperdiet donec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ipsum dolor sit amet, consectetur adipiscing elit. ",
+      "En esta sección podrás encontrar los fundamentos de diseño del kit USS y sus recursos disponibles en Figma.",
     CTAlink: "/docs/category/diseño",
     CTAlabel: "Diseño con el kit",
   },
   {
     title: "Desarrollo",
-    description: "Lorem ipsum dolor sit amet",
+    description: "Introducción al kit digital USS para desarrolladores y proveedores internos/externos.",
     CTAlink: "/docs/category/desarrolladores",
     CTAlabel: "Desarrollo con el kit",
   },
