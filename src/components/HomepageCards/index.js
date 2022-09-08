@@ -1,6 +1,6 @@
 import React from "react";
 
-const FeatureList = [
+const cardList = [
   {
     title: "Marca",
     description: "Lorem ipsum dolor sit amet",
@@ -22,7 +22,7 @@ const FeatureList = [
   },
 ];
 
-function Feature({ CTAlink, CTAlabel, title, description }) {
+function Card({ CTAlink, CTAlabel, title, description }) {
   return (
     <div className="uss-card uss-card--background-alt" style={{ width: "30%" }}>
       <img
@@ -43,13 +43,13 @@ function Feature({ CTAlink, CTAlabel, title, description }) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function HomepageCards() {
   return (
     <div style={{ padding: "96px 0px" }}>
       <div className="container">
         <div style={{ display: "flex", gap: "28px", justifyContent: "center" }}>
-          {FeatureList.map((props, idx) => (
-            <Feature key={idx} {...props} />
+          {cardList.map((props, idx) => (
+            <Card key={idx} {...props} />
           ))}
         </div>
       </div>

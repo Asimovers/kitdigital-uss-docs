@@ -61,7 +61,7 @@ const config = {
         respectPrefersColorScheme: false,
       },
       navbar: {
-        style: 'dark',
+        style: "dark",
         title: "",
         logo: {
           alt: "Kit Digital USS",
@@ -73,19 +73,14 @@ const config = {
             docId: "intro",
             position: "right",
             label: "Documentación Kit Digital",
-            class: "uss-btn btn-ternary",
+            className: "uss-btn btn-ternary",
           },
           {
             to: "/blog",
             label: "Changelog",
             position: "right",
-            class: "uss-btn btn-ternary",
+            className: "uss-btn btn-ternary",
           },
-          // {
-          //   href: 'https://github.com/Asimovers/kitdigital-uss-docs',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
         ],
       },
       footer: {

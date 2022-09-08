@@ -3,11 +3,12 @@ import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageCards from "@site/src/components/HomepageFeatures";
-
+import HomepageCards from "@site/src/components/HomepageCards";
 import styles from "./index.module.scss";
+import GlobalTopbar from "@site/src/components/GlobalTopbar";
+import HomepageNavbar from "@site/src/components/HomepageNavbar";
 
-function HomepageHeader() {
+function HomepageHero() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <div
@@ -44,9 +45,10 @@ export default function Home() {
       title={siteConfig.title}
       description="Description will go into a meta tag in <head />"
     >
-     
-      <main style={{backgroundColor: "var(--background)"}}>
-      <HomepageHeader />
+      <main style={{ backgroundColor: "var(--background)" }}>
+        <GlobalTopbar />
+        <HomepageNavbar />
+        <HomepageHero />
         <HomepageCards />
       </main>
     </Layout>

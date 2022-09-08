@@ -1,0 +1,49 @@
+.uss-renderer {
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.uss-renderer__renderer {
+  padding: 28px;
+  border: 1px solid aqua;
+}
+.uss-renderer__title {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border: 1px solid yellow;
+}
+.uss-renderer__displayer {
+  border: 1px solid blue;
+}
+.uss-renderer__pre {
+  font-size: 16px;
+  max-height: 350px;
+  overflow: auto;
+  padding: 0px;
+  margin: 0px;
+}
+
+.pre {
+  text-align: left;
+  margin: 0;
+  padding: 1rem 1rem;
+  overflow: auto;
+  font-size: 16px;
+}
+.line {
+  display: table-row;
+}
+
+.lineNo {
+  display: table-cell;
+  text-align: right;
+  padding-right: 1em;
+  user-select: none;
+  opacity: 0.5;
+}
+
+.lineContent {
+  display: table-cell;
+}

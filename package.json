@@ -26,7 +26,8 @@
     "sass": "^1.54.4"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "2.0.1"
+    "@docusaurus/module-type-aliases": "2.0.1",
+    "html-loader": "^4.1.0"
   },
   "browserslist": {
     "production": [
