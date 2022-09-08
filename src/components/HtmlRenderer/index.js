@@ -4,10 +4,11 @@ import Highlight, { defaultProps } from "prism-react-renderer";
 import theme from "prism-react-renderer/themes/nightOwl";
 import "./styles.css";
 
-// import html from "./file.html"; this fails
+// this fails
+import html from "./file.html"; 
 
 export default function HtmlRenderer({ src, title = "componente de prueba" }) {
-  const exampleCode = "test" //
+  const exampleCode = html || "falló" //
 
   return (
     <div className="uss-renderer">
