@@ -91,6 +91,9 @@ export default function HtmlRenderer({ category, name }) {
         {options.title ?? `${capitalize(category)} / ${capitalize(name)}`}
       </div>
 
+      <div className="uss-renderer__buttons">
+        {options.title ?? `${capitalize(category)} / ${capitalize(name)}`}
+      </div>
       <div
         className="uss-renderer__renderer"
         style={{ height: options.height ?? "100%" }}
