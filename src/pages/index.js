@@ -1,12 +1,11 @@
 import React from "react";
 import clsx from "clsx";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageCards from "@site/src/components/HomepageCards";
-import styles from "./index.module.scss";
 import GlobalTopbar from "@site/src/components/GlobalTopbar";
 import HomepageNavbar from "@site/src/components/HomepageNavbar";
+import Link from "@docusaurus/Link";
 
 function HomepageHero() {
   const { siteConfig } = useDocusaurusContext();
@@ -27,17 +26,17 @@ function HomepageHero() {
         </p>
         <div>
           <Link to="/docs/intro" className={"uss-btn btn-primary"}>
-            Documentación<i class="uss-icon ri-arrow-right-circle-line"></i>
+            Documentación
+            <i class="uss-icon ri-arrow-right-circle-line" />
           </Link>
           {/* <Link to="/docs/intro" className={"uss-btn btn-primary"}>
-            Documentación<i class="uss-icon ri-arrow-right-circle-line"></i>
-          </Link> */}
+              Documentación<i class="uss-icon ri-arrow-right-circle-line"></i>
+            </Link> */}
         </div>
       </div>
     </div>
   );
 }
-
 export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (

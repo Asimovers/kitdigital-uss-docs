@@ -16,7 +16,9 @@ Para comenzar a usar los componentes del kit, se debe cargar la librería de com
 
 Copia y pega la hoja de estilos `<link>` dentro de la etiqueta `<head>` antes que cualquier otro estilo.
 
-<HtmlRenderer/>
+<HtmlRenderer  category="buttons" name="primary" />
+<HtmlRenderer  category="navigation" name="pagination" />
+<HtmlRenderer  category="navigation" name="breadcrumb" />
 
 Con el archivo enlazado ya puedes empezar a usar los componentes
 

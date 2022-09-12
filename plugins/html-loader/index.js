@@ -3,6 +3,7 @@ module.exports = function (context, options) {
     name: "loaders",
     configureWebpack(config, isServer) {
       return {
+        cache: false,
         module: {
           rules: [
             {
@@ -10,6 +11,7 @@ module.exports = function (context, options) {
               loader: "html-loader",
             },
           ],
+        
         },
       };
     },
