@@ -16,7 +16,7 @@
   "dependencies": {
     "@docusaurus/core": "2.0.1",
     "@docusaurus/preset-classic": "2.0.1",
-    "@elias-cl/uss-kitdigital": "^0.1.1",
+    "@elias-cl/uss-kitdigital": "^0.1.6",
     "@mdx-js/react": "^1.6.22",
     "clsx": "^1.2.1",
     "docusaurus-plugin-sass": "^0.2.2",

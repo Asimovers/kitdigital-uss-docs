@@ -56,9 +56,9 @@ export default function HtmlRenderer({ category, name }) {
           />
 
         </head>
-        <body style="margin: auto; ">
+        <body style="display:flex; ">
         ${html}
-        <script src="https://unpkg.com/@elias-cl/uss-kitdigital@latest/dist/js/main.js" crossorigin></script>
+        <script src="https://unpkg.com/@elias-cl/uss-kitdigital@latest/dist/js/main.js"></script>
         <script>
       window.onload = function () {
         const anchorTags = document.querySelectorAll("a");

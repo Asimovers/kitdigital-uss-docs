@@ -21,14 +21,14 @@
   // border: 1px solid yellow;
 }
 .uss-renderer__renderer {
-  overflow: hidden;
+  // overflow: hidden;
 
   background: var(--neutral-80);
   padding: 32px 14px 26px 14px;
   margin-top: 10px;
   border-radius: 8px;
   border: solid 1px var(--neutral-70);
-  // border: 1px solid aqua;
+  border: 1px solid aqua;
 }
 .uss-renderer__iframe {
   width: 100%;

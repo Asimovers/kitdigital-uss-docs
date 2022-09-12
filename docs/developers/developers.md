@@ -19,6 +19,7 @@ Copia y pega la hoja de estilos `<link>` dentro de la etiqueta `<head>` antes qu
 <HtmlRenderer  category="buttons" name="primary" />
 <HtmlRenderer  category="navigation" name="pagination" />
 <HtmlRenderer  category="navigation" name="breadcrumb" />
+<HtmlRenderer  category="content" name="accordion" />
 
 Con el archivo enlazado ya puedes empezar a usar los componentes
 
