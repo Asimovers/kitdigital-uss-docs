@@ -10,6 +10,7 @@ export default function HtmlRenderer({ category, name }) {
   const [html, setHtml] = useState("Cargando...");
   const [options, setOptions] = useState({});
   const [uniqueId, setUniqueId] = useState(null);
+  const [height, setHeight] = useState(null);
 
   const capitalize = (s) => {
     if (typeof s !== "string") return "";
@@ -28,6 +29,9 @@ export default function HtmlRenderer({ category, name }) {
 
     if (optionsObject.title) {
       optionsObject.title = capitalize(optionsObject.title);
+    }
+    if (optionsObject.height) {
+      setHeight(optionsObject.height);
     }
     setOptions(optionsObject);
     const htmlWithoutOptions = html.substring(optionsEndIndex + 5);
@@ -58,10 +62,10 @@ export default function HtmlRenderer({ category, name }) {
           />
 
         </head>
-        <body id="iframe-body-${uniqueId}" style="padding: 20px; padding-top: 50px; height: 100%;">
+        <body id="iframe-body-${uniqueId}" style="padding: 20px; padding-top: 50px; min-height: 100%;">
         ${html}
-        <script src="https://unpkg.com/@elias-cl/uss-kitdigital@latest/dist/js/main.js"></script>
-        <script>
+        <script crossorigin="anonymous" src="https://unpkg.com/@elias-cl/uss-kitdigital@latest/dist/js/main.js"></script>
+        <script >
       window.onload = function () {
         const anchorTags = document.querySelectorAll("a");
         anchorTags.forEach(function (a) {
@@ -87,13 +91,6 @@ export default function HtmlRenderer({ category, name }) {
     });
     setUniqueId(Math.random().toString(36).substr(2, 9));
   }, []);
-  useEffect(() => {
-    //get the height of the iframe body
-    const iframeBody = document.getElementById(`iframe-body-${uniqueId}`);
-    console.log("iframe body!!! ",iframeBody.scrollHeight)
-
-
-  }, [html])
 
   return (
     <div className="uss-renderer">
@@ -121,7 +118,7 @@ export default function HtmlRenderer({ category, name }) {
       </div>
       <div
         className="uss-renderer__renderer"
-        style={{ height: options.height ?? "100%" }}
+        style={{ height: height ?? "100%" }}
       >
         {handleIframe(html)}
       </div>
