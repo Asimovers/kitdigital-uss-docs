@@ -58,7 +58,7 @@ export default function HtmlRenderer({ category, name }) {
           />
 
         </head>
-        <body style="padding: 20px; padding-top: 50px; height: 100%;">
+        <body id="iframe-body-${uniqueId}" style="padding: 20px; padding-top: 50px; height: 100%;">
         ${html}
         <script src="https://unpkg.com/@elias-cl/uss-kitdigital@latest/dist/js/main.js"></script>
         <script>
@@ -87,6 +87,13 @@ export default function HtmlRenderer({ category, name }) {
     });
     setUniqueId(Math.random().toString(36).substr(2, 9));
   }, []);
+  useEffect(() => {
+    //get the height of the iframe body
+    const iframeBody = document.getElementById(`iframe-body-${uniqueId}`);
+    console.log("iframe body!!! ",iframeBody.scrollHeight)
+
+
+  }, [html])
 
   return (
     <div className="uss-renderer">
