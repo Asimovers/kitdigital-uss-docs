@@ -9,6 +9,7 @@ export default function HtmlRenderer({ category, name }) {
   if (category === undefined || name === undefined) return null;
   const [html, setHtml] = useState("Cargando...");
   const [options, setOptions] = useState({});
+  const [uniqueId, setUniqueId] = useState(null);
 
   const capitalize = (s) => {
     if (typeof s !== "string") return "";
@@ -41,11 +42,12 @@ export default function HtmlRenderer({ category, name }) {
   const handleIframe = (html) => {
     return (
       <iframe
+        id={`iframe-${uniqueId}`}
         className="uss-renderer__iframe"
         title={options.title ?? `${capitalize(category)} / ${capitalize(name)}`}
         srcDoc={`
         <!DOCTYPE html>
-        <html lang="en">
+        <html lang="en" style="height: 100%;">
         <head>
           <meta charset="UTF-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -56,7 +58,7 @@ export default function HtmlRenderer({ category, name }) {
           />
 
         </head>
-        <body style="display:flex; ">
+        <body style="padding: 20px; padding-top: 50px; height: 100%;">
         ${html}
         <script src="https://unpkg.com/@elias-cl/uss-kitdigital@latest/dist/js/main.js"></script>
         <script>
@@ -83,6 +85,7 @@ export default function HtmlRenderer({ category, name }) {
     ).then((module) => {
       handleHtml(module.default);
     });
+    setUniqueId(Math.random().toString(36).substr(2, 9));
   }, []);
 
   return (
@@ -92,7 +95,22 @@ export default function HtmlRenderer({ category, name }) {
       </div>
 
       <div className="uss-renderer__buttons">
-        {options.title ?? `${capitalize(category)} / ${capitalize(name)}`}
+        <button
+          onClick={() => {
+            const iframe = document.querySelector(`#iframe-${uniqueId}`);
+            iframe.classList.remove("uss-renderer__iframe--mobile");
+          }}
+        >
+          desktop
+        </button>
+        <button
+          onClick={() => {
+            const iframe = document.querySelector(`#iframe-${uniqueId}`);
+            iframe.classList.add("uss-renderer__iframe--mobile");
+          }}
+        >
+          mobile
+        </button>
       </div>
       <div
         className="uss-renderer__renderer"
