@@ -16,10 +16,10 @@ Para comenzar a usar los componentes del kit, se debe cargar la librería de com
 
 Copia y pega la hoja de estilos `<link>` dentro de la etiqueta `<head>` antes que cualquier otro estilo.
 
-<HtmlRenderer  category="buttons" name="primary" />
-<HtmlRenderer  category="navigation" name="pagination" />
-<HtmlRenderer  category="navigation" name="breadcrumb" />
-<HtmlRenderer  category="content" name="accordion" />
+<HtmlRenderer  category="buttons" component="primary" title="boton primario" />
+<HtmlRenderer  category="navigation" component="pagination" title="boton primario"/>
+<HtmlRenderer  category="navigation" component="breadcrumb" title="boton primario" />
+<HtmlRenderer  category="content" component="accordion" title="boton primario" height="440px" responsive/>
 
 Con el archivo enlazado ya puedes empezar a usar los componentes
 

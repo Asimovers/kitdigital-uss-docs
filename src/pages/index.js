@@ -3,8 +3,7 @@ import clsx from "clsx";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageCards from "@site/src/components/HomepageCards";
-import GlobalTopbar from "@site/src/components/GlobalTopbar";
-import HomepageNavbar from "@site/src/components/HomepageNavbar";
+
 import Link from "@docusaurus/Link";
 
 function HomepageHero() {
@@ -12,7 +11,7 @@ function HomepageHero() {
   return (
     <div
       className="d-flex justify-content-center"
-      style={{ margin: "96px 0px" }}
+      style={{ padding: "96px 0px" }}
     >
       <div style={{ textAlign: "center" }}>
         <h5 className="mb-20">Kit digital</h5>
@@ -45,8 +44,6 @@ export default function Home() {
       description="Description will go into a meta tag in <head />"
     >
       <main style={{ backgroundColor: "var(--background)" }}>
-        <GlobalTopbar />
-        <HomepageNavbar />
         <HomepageHero />
         <HomepageCards />
       </main>
