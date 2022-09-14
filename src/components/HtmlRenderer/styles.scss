@@ -1,6 +1,9 @@
 @import "@elias-cl/uss-kitdigital/src/css/_colors.scss";
 // @import "@elias-cl/uss-kitdigital/src/css/_icons.scss";
 @import url("@elias-cl/uss-kitdigital/dist/css/main.css") layer(uss-kit);
+:root {
+  color-scheme: dark;
+}
 @layer uss-kit {
   body {
     background: transparent;

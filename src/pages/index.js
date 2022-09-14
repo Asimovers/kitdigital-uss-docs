@@ -5,6 +5,7 @@ import Layout from "@theme/Layout";
 import HomepageCards from "@site/src/components/HomepageCards";
 
 import Link from "@docusaurus/Link";
+import Footer from "../components/Footer";
 
 function HomepageHero() {
   const { siteConfig } = useDocusaurusContext();
@@ -46,6 +47,7 @@ export default function Home() {
       <main style={{ backgroundColor: "var(--background)" }}>
         <HomepageHero />
         <HomepageCards />
+        <Footer/>
       </main>
     </Layout>
   );

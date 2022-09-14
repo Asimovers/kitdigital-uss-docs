@@ -82,47 +82,47 @@ const config = {
           },
         ],
       },
-      footer: {
-        style: "dark",
-        links: [
-          {
-            title: "Docs",
-            items: [
-              {
-                label: "Documentación",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Comunidad",
-            items: [
-              {
-                label: "Discord",
-                href: "#",
-              },
-              {
-                label: "Twitter",
-                href: "#",
-              },
-            ],
-          },
-          {
-            title: "More",
-            items: [
-              {
-                label: "Changelog",
-                to: "/blog",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/Asimovers/kitdigital-uss-docs",
-              },
-            ],
-          },
-        ],
-        copyright: `Kit Digital - Universidad San Sebastián ${new Date().getFullYear()}. Built with Docusaurus.`,
-      },
+      // footer: {
+      //   style: "dark",
+      //   links: [
+      //     {
+      //       title: "Docs",
+      //       items: [
+      //         {
+      //           label: "Documentación",
+      //           to: "/docs/intro",
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: "Comunidad",
+      //       items: [
+      //         {
+      //           label: "Discord",
+      //           href: "#",
+      //         },
+      //         {
+      //           label: "Twitter",
+      //           href: "#",
+      //         },
+      //       ],
+      //     },
+      //     {
+      //       title: "More",
+      //       items: [
+      //         {
+      //           label: "Changelog",
+      //           to: "/blog",
+      //         },
+      //         {
+      //           label: "GitHub",
+      //           href: "https://github.com/Asimovers/kitdigital-uss-docs",
+      //         },
+      //       ],
+      //     },
+      //   ],
+      //   copyright: `Kit Digital - Universidad San Sebastián ${new Date().getFullYear()}. Built with Docusaurus.`,
+      // },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
